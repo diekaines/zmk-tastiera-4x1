@@ -1,0 +1,6 @@
+if SHIELD_ORI41
+
+config ZMK_KEYBOARD_NAME
+    default "Ori4x1"
+
+endif
