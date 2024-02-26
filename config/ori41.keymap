@@ -14,7 +14,7 @@
 
         default_layer {
             bindings = <
-&kp C_MUTE  &kp C_VOLUME_UP  &kp C_VOLUME_UP  &mo 1
+&kp C_MUTE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &mo 1
             >;
         };
 
