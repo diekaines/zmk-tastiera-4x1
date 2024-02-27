@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        mute_or_show_desktop: mute_or_show_desktop {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MUTE_OR_SHOW_DESKTOP";
+            #binding-cells = <0>;
+            bindings = <&kp C_MUTE>, <&kp LG(D)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
