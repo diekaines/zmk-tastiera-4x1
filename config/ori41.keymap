@@ -10,11 +10,13 @@
 
 / {
     behaviors {
-        mute_or_show_desktop: mute_or_show_desktop {
+        mute_or_show_desktop_or_bootldr: mute_or_show_desktop_or_bootldr {
             compatible = "zmk,behavior-tap-dance";
-            label = "MUTE_OR_SHOW_DESKTOP";
+            label = "MUTE_OR_SHOW_DESKTOP_OR_BOOTLDR";
             #binding-cells = <0>;
-            bindings = <&kp C_MUTE>, <&kp LG(D)>;
+            bindings = <&kp C_MUTE>, <&kp LG(D)>, <&bootloader>;
+
+            tapping-term-ms = <400>;
         };
     };
 
@@ -23,7 +25,7 @@
 
         default_layer {
             bindings = <
-&mute_or_show_desktop  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &mo 1
+&mute_or_show_desktop_or_bootldr  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &mo 1
             >;
         };
 
