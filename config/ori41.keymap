@@ -23,7 +23,7 @@
 
         default_layer {
             bindings = <
-&kp C_MUTE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &mo 1
+&mute_or_show_desktop  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &mo 1
             >;
         };
 
